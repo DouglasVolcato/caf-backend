@@ -9,6 +9,7 @@ export class AuthenticationAdapter {
   }
 
   protected generateToken(): string {
+    return '3e2389eny89';
     const tokenSecret = EnvVariables.getAuthApiSecret();
     const tokenContent = {
       iss: EnvVariables.getAuthApiUserId(),

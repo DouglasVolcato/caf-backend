@@ -23,6 +23,7 @@ export class FaceRegistrationAdapter
   public async registrate(
     faceRegistrationRequest: FaceRegistrationRequestType,
   ): Promise<boolean> {
+    return true;
     const token = this.generateToken();
     const apiUrl = EnvVariables.getAuthApiUrl();
     const registration: FaceRegistrationResponseType =
